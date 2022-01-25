@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .container{
+      background: cornsilk;
+      width: 400px;
+    }
+    .area{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-around;
+      
+    
+    }
+
+    .text{
+      width: 280px;
+    }
+    .title{
+      text-align: center;
+    }
+    .submit{
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: space-around;
+      
+    }
+    div label {
+      padding-top: 15px;
+    }
+   .message{
+     padding: 15px;
+     display: flex;
+     align-items: center;
+     flex-wrap: wrap;
+    flex-direction: column;
+    
+   }
+   textarea{
+     width: 280px;
+     height: 50px;
+   }
+   input{
+     padding: 2px;
+   }
+    
+
+
+
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <form action="index3.html">
+      <div class="title">
+        <h1>Contact Us</h1>
+      </div>
+
+      <div class="area">
+        <label for="name">Name</label>
+        <input class="text" id="name" type="text" required>
+      
+        <label for="email">E-mail</label>
+        <input class="text" id="email" type="email"  required>
+
+        <label for="number">Contact Number</label>
+        <input class="text" id="number" type="text" required>
+
+      </div>
+      <div class="message">
+        <textarea  id="message" placeholder="Text messages" ></textarea>
+      </div>
+      <div class="submit">
+        <input type="submit">
+      </div>
+    </form>
+  </div>
+  
+</body>
+</html>
