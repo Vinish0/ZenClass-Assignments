@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<style>
+  div{
+    padding: 5px;
+  }
+  
+</style>
+<body>
+  
+  <form action="#">
+    <div>
+      <label for="fullname">Full Name</label>
+    <input type="text" id="fullname" value="Person 1">
+    </div>
+    <div>
+    <label for="age">Age</label>
+    <input type="number" id="age" value="18">
+  </div>
+  <div>
+    <input type="radio" id="male" name="gender" checked>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" >
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender">
+    <label for="other">Other</label>
+  </div>
+  <div>
+    <h3>Hobbies</h3>
+    <select name="hobbies" id="hobbies">
+
+      <option value="music">Music</option>
+      <option value="travelling" selected>Travelling</option>
+      <option value="cricket">Cricket</option>
+      <option value="editing">Photo editing</option>
+    </select>
+  </div>
+
+ <h3>Message box</h3>
+<textarea name="message" style="width:200px; height:200pxpx;" >Text something</textarea>
+<div>
+  <h3>Button</h3>
+  <button type="button" onclick="alert('Welcome!')">Click here</button>
+</div>
+
+  <fieldset>
+    <legend>Person</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="john"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+
+  </form>
+</body>
+</html>
